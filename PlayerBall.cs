@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Geekbrains
 {
-    public class PlayerBall : PlayerController
+    public class PlayerBall : PlayerMovementScr2
     {
         // Start is called before the first frame update
 
@@ -12,7 +12,8 @@ namespace Geekbrains
         // Update is called once per frame
         void FixedUpdate()
         {
-            Move();
+            JumpLogic();
+            MovementLogic();
         }
     }
 }
